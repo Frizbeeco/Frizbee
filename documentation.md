@@ -33,12 +33,12 @@ The posting files store the post information, and our server merely stores the v
 Here is a sample posting form in PHP that a decentralized server could implement one similar to:
 
     <?php
-    
-    $xml = "posting.xml";
-    
+
     $token = htmlentities($_POST[token]);
     
-    $postid = mcrypt_create_iv(20, MCRYPT_DEV_RANDOM);;
+    $postid = uniqid();
+    
+    // $postid = mcrypt_create_iv(20, MCRYPT_DEV_RANDOM);
     
     $title = htmlentities($_POST[title]);
     
@@ -48,11 +48,11 @@ Here is a sample posting form in PHP that a decentralized server could implement
     
     $unixtime = time();
     
-    if(strlen($full > 10) && strlen($subtitle > 10) && strlen($title > 10){ 
+    if(strlen($title) > 3 && strlen($subtitle) > 3 && strlen($full) > 3){
     
     $contents = "<post> <token>".$token."</token> <postid>".$postid."</postid> <title>".$title."</title> <subtitle>".$subtitle."</subtitle> <full>".$full."</full> <unixtime>".$unixtime."</unixtime> </post>";
     
-    $myfile = file_put_contents($contents, $xml.PHP_EOL , FILE_APPEND);
+    file_put_contents("posting.xml", $contents, $xml.PHP_EOL, FILE_APPEND);
     
     }
     
