@@ -24,7 +24,7 @@ Here is the formatting of the XML file:
         <unixtime>1432342380</unixtime>
     </post>
     
-Each post is wrapped by a `<post>` tag, with the folowing: `<token>` representing the user's user token (ask the user from the posting form for it, and direct them to [this page to find it](https://frizbee.co/token.php)), `<postid>` being a UUID that the posting form should have generated on the fly, `<title>`, `<subtitle>`, and `<full>` (the full body of the post) being user-submitted information from the form, and `<unixtime>` representing the unix timestamp as of the time of the submission.
+Each post is wrapped by a `<post>` tag, with the folowing: `<token>` representing the user's user passphrase token (ask the user from the posting form for it, and direct them to [this page to find it](https://frizbee.co/token.php)), `<postid>` being a UUID that the posting form should have generated on the fly, `<title>`, `<subtitle>`, and `<full>` (the full body of the post) being user-submitted information from the form, and `<unixtime>` representing the unix timestamp as of the time of the submission.
   
 Make sure NOT to wrap the whole .xml file within a larger tag. Even if it is not syntactically correect, our interface automatically parses it.
 
