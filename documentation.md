@@ -1,4 +1,4 @@
-# Host a decentralized external playlist server
+# XML protocol for hosting a decentralized external playlist server
 
 Frizbee uses a minimal system of parsing XML files for its playlists. There should be two elements to your interface:
 
