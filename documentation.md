@@ -58,4 +58,4 @@ Here is a sample posting form in PHP that a decentralized server could implement
     
     ?>
 
-If you have any further questions, shoot an email our way at servers@frizbee.co.
+If you have created these two files on your server or have any further questions, shoot an email our way at servers@frizbee.co. Our bot will handle the rest automatically.
