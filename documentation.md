@@ -52,7 +52,7 @@ Here is a sample posting form in PHP that a decentralized server could implement
     
     $contents = "<post> <token>".$token."</token> <postid>".$postid."</postid> <title>".$title."</title> <subtitle>".$subtitle."</subtitle> <full>".$full."</full> <unixtime>".$unixtime."</unixtime> </post>";
     
-    file_put_contents("posting.xml", $contents, $xml.PHP_EOL, FILE_APPEND);
+    file_put_contents("posting.xml", $contents, FILE_APPEND);
     
     }
     
