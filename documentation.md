@@ -58,7 +58,8 @@ Here is a sample posting form in PHP that a decentralized server could implement
     
     ?>
     
-On the same page, you can use PHP similar to the following:
+
+On the same page, you can use HTML similar to the following:
 
     <form method="post">
     
