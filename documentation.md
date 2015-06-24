@@ -57,5 +57,23 @@ Here is a sample posting form in PHP that a decentralized server could implement
     }
     
     ?>
+    
+On the same page, you can use PHP similar to the following:
+
+    <form method="post">
+    
+    <iframe src="https://frizbee.co/token.php" style="width:100%;border:0px;height:50px;"></iframe><br><br>
+    
+    Token (copy down the passphrase you see from above): <input type="password" name="token"><br><br>
+    
+    Title: <input type="text" name="title"><br><br>
+    
+    Subtitle: <input type="text" name="subtitle"><br><br>
+    
+    Full body text: <input type="text" name="full"><br><br>
+    
+    <input type="submit">
+    
+    </form>
 
 If you have created these two files on your server or have any further questions, shoot an email our way at servers@frizbee.co. Our bot will handle the rest automatically.
